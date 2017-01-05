@@ -12,6 +12,7 @@
         <item name="colorPrimary">@color/red</item>
         <item name="colorPrimaryDark">@color/liteRed</item>
         <item name="colorAccent">@color/liteRed</item>
+        <item name="android:calendarTextColor">@color/liteRed</item>
 
     </style>
     <style name="MyEditText" parent="Theme.AppCompat.Light">
@@ -26,6 +27,15 @@
         <item name="android:textColorSecondary">@color/white</item>
         <item name="android:titleTextColor">@color/white</item>
 
+    </style>
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
     </style>
 
 

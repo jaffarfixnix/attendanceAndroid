@@ -46,6 +46,7 @@ public class LoginActivity extends AppCompatActivity {
         edit_userId = (EditText)findViewById(R.id.edt_userid);
         edit_userPassword=(EditText)findViewById(R.id.edt_password);
         text_userId = (TextInputLayout)findViewById(R.id.txt_userid);
+
         text_userPassword = (TextInputLayout)findViewById(R.id.text_password);
         butn_signIn = (Button)findViewById(R.id.btn_signin);
 //        edit_userId.addTextChangedListener(new MyTextWatcher(edit_userId));
@@ -127,12 +128,24 @@ public class LoginActivity extends AppCompatActivity {
                 obj.put("password", JSONOBJECT.getPassword());
                 obj.put("accessType", "Mobile");
                 Log.i("Tag", String.valueOf(obj));
+
+                String empid = obj.getString("id");
+
+                SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
+                SharedPreferences.Editor editor=pref.edit();
+                editor.putString("emplyeeid", empid);
+                editor.commit();
+
+                Log.i("Tage", String.valueOf(empid));
+
 //                mixpanel.track("LoginActivty-oncreate Called",obj);
 //                mixpanel.timeEvent("userlogin");
             } catch (JSONException e) {
                 e.printStackTrace();
 
             }
+            SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
+            final String empid = pref.getString("emplyeeid", null);
             mixpanel.track("Employe Login", obj);
             mixpanel.registerSuperProperties(obj);
 
@@ -177,6 +190,7 @@ public class LoginActivity extends AppCompatActivity {
                     try {
                         String token = object.getString("sessionToken");
                         Log.i("Tag token", String.valueOf(token));
+
                         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
                         SharedPreferences.Editor editor=pref.edit();
                         editor.putString("tokenid",token);

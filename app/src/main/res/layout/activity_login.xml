@@ -36,7 +36,7 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColorHint="#ffffff"
+                android:theme="@style/TextLabel"
                 android:hint="User Name"
                 android:id="@+id/txt_userid">
 
@@ -47,6 +47,7 @@
                     android:drawablePadding="15dp"
                     android:fontFamily="monospace"
                     android:textStyle="normal"
+                    android:theme="@style/MyEditText"
                     android:textSize="18sp"
                     android:textColor="#ffffff"
                     android:backgroundTint="#ffffff"
@@ -67,7 +68,7 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColorHint="#ffffff"
+                android:theme="@style/TextLabel"
                 android:hint="Password"
                 android:id="@+id/text_password">
 
@@ -79,6 +80,7 @@
                     android:fontFamily="monospace"
                     android:textStyle="normal"
                     android:textSize="18sp"
+                    android:theme="@style/MyEditText"
                     android:textColor="#ffffff"
                     android:backgroundTint="#ffffff"
                     android:id="@+id/edt_password"/>

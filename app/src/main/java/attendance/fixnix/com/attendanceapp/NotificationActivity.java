@@ -27,5 +27,8 @@ public class NotificationActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
+
+
     }
 }

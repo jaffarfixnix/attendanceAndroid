@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -24,6 +26,7 @@ public class SickLeave extends AppCompatActivity implements View.OnClickListener
     private Toolbar toolbar;
     public  EditText fromDateEtxt;
     public EditText toDateEtxt;
+    private TextView text_noofDay;
     private DatePickerDialog fromDatePickerDialog;
     private DatePickerDialog toDatePickerDialog;
     SimpleDateFormat dateFormatter;
@@ -34,6 +37,7 @@ public class SickLeave extends AppCompatActivity implements View.OnClickListener
         super.onCreate(SavaInstanceState);
         setContentView(R.layout.activity_sickleave);
         toolbar = (Toolbar) findViewById(R.id.toolbar_sick);
+        text_noofDay = (TextView) findViewById(R.id.txt_sick_noday);
         setSupportActionBar(toolbar);
         setTitle("EARNED LEAVE");
         toolbar.setTitleTextColor(0xFFFFFFFF);
@@ -44,7 +48,7 @@ public class SickLeave extends AppCompatActivity implements View.OnClickListener
                 onBackPressed();
             }
         });
-        dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
+        dateFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
         findViewsById();
 
@@ -73,7 +77,7 @@ public class SickLeave extends AppCompatActivity implements View.OnClickListener
                 newDate.set(Calendar.YEAR, year);
                 newDate.set(Calendar.MONTH, monthOfYear);
                 newDate.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                fromDateEtxt.setText(dateFormatter.format(newDate.getTime()));
+                fromDateEtxt.setText(dateFormatter.format(newDate.getTimeInMillis()));
                 milis1 = newDate.getTimeInMillis();
             }
 
@@ -84,11 +88,15 @@ public class SickLeave extends AppCompatActivity implements View.OnClickListener
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                 Calendar newDates = Calendar.getInstance();
                 newDates.set(year, monthOfYear, dayOfMonth);
-                toDateEtxt.setText(dateFormatter.format(newDates.getTime()));
+                toDateEtxt.setText(dateFormatter.format(newDates.getTimeInMillis()));
                 milis2 = newDates.getTimeInMillis();
 
 
-
+                long diff = milis2 - milis1;
+                long diffDays = diff / (24 * 60 * 60 * 1000);
+                Log.i("Tag Day", String.valueOf(diffDays));
+                Log.i("tag",String.valueOf(diff));
+                text_noofDay.setText(String.valueOf(diffDays + "DAYS"));
             }
 
         },newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH));

@@ -78,13 +78,14 @@
                     <!--android:background="@android:drawable/ic_menu_my_calendar"/>-->
 
                     <TextView
-                        android:layout_width="92dp"
+                        android:layout_width="63dp"
                         android:layout_height="wrap_content"
                         android:text="FROM"
                         android:paddingBottom="12dp"
                         />
 
                     <EditText
+                        android:textAlignment="center"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/txt_sick_dateFrom"/>
@@ -99,7 +100,7 @@
                     <!--android:layout_height="28dp"-->
                     <!--android:background="@android:drawable/ic_menu_my_calendar"/>-->
                     <TextView
-                        android:layout_width="92dp"
+                        android:layout_width="65dp"
                         android:layout_height="wrap_content"
                         android:text="To"
                         android:paddingTop="12dp"/>
@@ -113,7 +114,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="NoofDay"
+                android:hint="NoofDay"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:textAlignment="center"
                 android:id="@+id/txt_sick_noday"
                 android:layout_gravity="center"
                 android:paddingTop="@dimen/activity_horizontal_margin"/>
@@ -133,8 +138,8 @@
                 android:paddingBottom="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_horizontal_margin"
                 android:hint="Description"
-                android:textSize="15sp"
-                android:inputType="textMultiLine"/>
+                android:textSize="18sp"
+                android:inputType="textCapWords|textMultiLine"/>
 
         </LinearLayout>
 
