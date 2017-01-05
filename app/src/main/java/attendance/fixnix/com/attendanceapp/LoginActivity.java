@@ -28,18 +28,20 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
 import attendance.fixnix.com.attendanceapp.testApi.LoginApi;
+import com.mixpanel.android.mpmetrics.MixpanelAPI;
 
-/**
- * Created by akila on 2/1/17.
- */
+
 
 public class LoginActivity extends AppCompatActivity {
     public EditText edit_userId, edit_userPassword;
     public Button butn_signIn;
     public TextInputLayout text_userId,text_userPassword;
+    MixpanelAPI mixpanel;
     protected void onCreate(Bundle SaveInstanceState){
         super.onCreate(SaveInstanceState);
         setContentView(R.layout.activity_login);
+        String projectToken = "4cdf8949e9b0e47ba9676193b27cc706"; // e.g.: "1ef7e30d2a58d27f4b90c42e31d6d7ad"
+       mixpanel = MixpanelAPI.getInstance(this, projectToken);
 
         edit_userId = (EditText)findViewById(R.id.edt_userid);
         edit_userPassword=(EditText)findViewById(R.id.edt_password);
@@ -68,6 +70,11 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
+    }
+    @Override
+    protected void onDestroy() {
+        mixpanel.flush();
+        super.onDestroy();
     }
     private class MyTextWatcher implements TextWatcher {
 
@@ -115,47 +122,48 @@ public class LoginActivity extends AppCompatActivity {
             JSONOBJECT.setId(edit_userId.getText().toString());
             JSONOBJECT.setPassword(edit_userPassword.getText().toString());
             JSONObject obj = new JSONObject();
-            try{
-                obj.put("id",JSONOBJECT.getId());
-                obj.put("password",JSONOBJECT.getPassword());
-                obj.put("accessType","Mobile");
-                Log.i("Tag",String.valueOf(obj));
+            try {
+                obj.put("id", JSONOBJECT.getId());
+                obj.put("password", JSONOBJECT.getPassword());
+                obj.put("accessType", "Mobile");
+                Log.i("Tag", String.valueOf(obj));
 //                mixpanel.track("LoginActivty-oncreate Called",obj);
 //                mixpanel.timeEvent("userlogin");
-            }
-            catch (JSONException e){
+            } catch (JSONException e) {
                 e.printStackTrace();
 
             }
+            mixpanel.track("Employe Login", obj);
+            mixpanel.registerSuperProperties(obj);
 
             DefaultHttpClient httpClient = new DefaultHttpClient();
             HttpPost httpPost = new HttpPost("http://52.172.182.61:3000/users/v1/login");
             Log.i("Requestd Connection", httpPost.getURI().toString());
             StringEntity se = null;
-            try{
+            try {
                 se = new StringEntity(obj.toString());
-                Log.i("Tag",String.valueOf(se));
-            }
-            catch (UnsupportedEncodingException e){
+                Log.i("Tag", String.valueOf(se));
+            } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }
             httpPost.setEntity(se);
             httpPost.setHeader("Accept", "application/json");
             httpPost.setHeader("content-type", "application/json");
-            int a ;
-            int responseCode=0;
+            int a;
+            int responseCode = 0;
+            String responseBody = null;
             try {
                 //a
                 HttpResponse resp = httpClient.execute(httpPost);
                 //responseCode = resp.getStatusLine().getStatusCode();
-                String responseBody = EntityUtils.toString(resp.getEntity());
-                Log.v("VANTEST",responseBody.toString());
+                responseBody = EntityUtils.toString(resp.getEntity());
+                Log.v("VANTEST", responseBody.toString());
 
                 return responseBody.toString();
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            return null;
+            return responseBody;
         }
         protected void onPostExecute(String rstl){
 

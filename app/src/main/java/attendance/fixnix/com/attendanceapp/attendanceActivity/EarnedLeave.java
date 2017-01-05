@@ -1,6 +1,5 @@
 package attendance.fixnix.com.attendanceapp.attendanceActivity;
 
-import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,17 +11,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
-
-import org.apache.http.ParseException;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
-import java.util.concurrent.TimeUnit;
 
 import attendance.fixnix.com.attendanceapp.R;
 
@@ -39,11 +33,13 @@ public class EarnedLeave extends AppCompatActivity implements View.OnClickListen
     private DatePickerDialog toDatePickerDialog;
 
     private SimpleDateFormat dateFormatter;
+    private long milis1 ;
+    private long milis2;
 
 
     protected void onCreate(Bundle SaveInstanceState) {
         super.onCreate(SaveInstanceState);
-        setContentView(R.layout.activity_earleave);
+        setContentView(R.layout.activity_earnedleave);
         toolbar = (Toolbar) findViewById(R.id.toolbar_earn);
         fromDateEtxt = (EditText)findViewById(R.id.txt_dateFrom);
         toDateEtxt = (EditText) findViewById(R.id.txt_dateTo);
@@ -52,6 +48,7 @@ public class EarnedLeave extends AppCompatActivity implements View.OnClickListen
             @Override
             public void onClick(View v) {
                 Toast.makeText(EarnedLeave.this,fromDateEtxt.getText().toString() + toDateEtxt.getText().toString() , Toast.LENGTH_SHORT).show();
+
             }
         });
         setSupportActionBar(toolbar);
@@ -70,6 +67,13 @@ public class EarnedLeave extends AppCompatActivity implements View.OnClickListen
 
         setDateTimeField();
 
+        long diff = milis2 - milis1;
+        long diffDays = diff / (24 * 60 * 60 * 1000);
+        Log.i("Tag Day", String.valueOf(diffDays));
+
+
+
+
     }
     private void findViewsById() {
         fromDateEtxt = (EditText) findViewById(R.id.txt_dateFrom);
@@ -87,13 +91,15 @@ public class EarnedLeave extends AppCompatActivity implements View.OnClickListen
         Calendar newCalendar = Calendar.getInstance();
         fromDatePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
 
+
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                Calendar newDate = Calendar.getInstance();
+                Calendar newDate1 = Calendar.getInstance();
 //                newDate.set(year, monthOfYear, dayOfMonth);
-                newDate.set(Calendar.YEAR, year);
-                newDate.set(Calendar.MONTH, monthOfYear);
-                newDate.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                fromDateEtxt.setText(dateFormatter.format(newDate.getTime()));
+                newDate1.set(Calendar.YEAR, year);
+                newDate1.set(Calendar.MONTH, monthOfYear);
+                newDate1.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                fromDateEtxt.setText(dateFormatter.format(newDate1.getTime()));
+                milis1 = newDate1.getTimeInMillis();
             }
 
         },newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH));
@@ -104,49 +110,28 @@ public class EarnedLeave extends AppCompatActivity implements View.OnClickListen
                 Calendar newDates = Calendar.getInstance();
                 newDates.set(year, monthOfYear, dayOfMonth);
                 toDateEtxt.setText(dateFormatter.format(newDates.getTime()));
+                 milis2 = newDates.getTimeInMillis();
+
+
+
             }
 
         },newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH));
 
 
+    }
 
 
-//        long diff = newCalendar.getTimeInMillis() - newCalendar.getTimeInMillis();
-//        long days = diff / (24 * 60 * 60 * 1000);
-//        Log.i("Tag", String.valueOf(days));
-//        String strThatDay = fromDateEtxt.getText().toString();
-//        SimpleDateFormat formatter = new SimpleDateFormat("yyyy/MM/dd");
-//        Date d = null;
-//        try {
-//            d = formatter.parse(strThatDay);//catch exception
-//        } catch (ParseException e) {
-//            // TODO Auto-generated catch block
-//            e.printStackTrace();
-//        } catch (java.text.ParseException e) {
-//            e.printStackTrace();
-//        }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.main, menu);
+//        return true;
 //
 //
-//        Calendar thatDay = Calendar.getInstance();
-//        thatDay.setTime(d);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+//    }
 
 
-    }
-
-    public int getDaysDifference(Date fromDateEtxt, Date toDateEtxt)
-    {
-        if(fromDateEtxt==null||toDateEtxt==null)
-            return 0;
-
-        return (int)( (fromDateEtxt.getTime() - toDateEtxt.getTime()) / (1000 * 60 * 60 * 24));
-    }
     @Override
     public void onClick(View view) {
         if(view == fromDateEtxt) {

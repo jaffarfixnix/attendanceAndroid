@@ -23,6 +23,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 
 import attendance.fixnix.com.attendanceapp.attendanceActivity.EarnedLeave;
+import attendance.fixnix.com.attendanceapp.attendanceActivity.SickLeave;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -48,6 +49,13 @@ public class TimeLineActivity extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, EarnedLeave.class);
+                startActivity(intent);
+            }
+        });
+        text_sick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, SickLeave.class);
                 startActivity(intent);
             }
         });
