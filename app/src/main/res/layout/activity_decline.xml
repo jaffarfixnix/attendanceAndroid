@@ -9,8 +9,8 @@
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#00C853"
-        android:id="@+id/toolbar_notfication"
+        android:background="#50d284"
+        android:id="@+id/toolbar_decline"
         android:theme="@style/ToolbarColoredBackArrow">
 
     </android.support.v7.widget.Toolbar>
@@ -20,7 +20,7 @@
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="434dp"
             android:orientation="vertical"
             android:paddingTop="@dimen/activity_horizontal_margin"
             android:paddingBottom="@dimen/activity_horizontal_margin"
@@ -28,17 +28,58 @@
             android:paddingRight="@dimen/activity_vertical_margin">
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EARN LEAVE"
+                    android:textColor="#00C853"
+                    android:padding="12dp"
+                    android:textSize="22sp"
+                    android:textAlignment="center"/>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NAME"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DOMAIN"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:weightSum="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_horizontal_margin">
 
                 <LinearLayout
                     android:layout_width="236dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_weight="1.68"
+                    android:layout_gravity="center">
 
 
                     <LinearLayout
@@ -52,20 +93,24 @@
                         <!--android:background="@android:drawable/ic_menu_my_calendar"/>-->
 
                         <TextView
-                            android:layout_width="92dp"
+                            android:layout_width="95dp"
                             android:layout_height="wrap_content"
                             android:text="FROM"
+                            android:textSize="18sp"
                             android:paddingBottom="12dp"
                             />
 
                         <TextView
+
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/txt_dateFrom"
+                            android:padding="5dp"
+                            android:textSize="18sp"
                             android:text="Date"/>
                     </LinearLayout>
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="255dp"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
                         <!--<ImageView-->
@@ -74,35 +119,55 @@
                         <!--android:layout_height="28dp"-->
                         <!--android:background="@android:drawable/ic_menu_my_calendar"/>-->
                         <TextView
-                            android:layout_width="92dp"
+                            android:layout_width="97dp"
                             android:layout_height="wrap_content"
                             android:text="To"
+                            android:textSize="18sp"
                             android:paddingTop="12dp"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/txt_dateTo"
+                            android:padding="5dp"
+                            android:textSize="18sp"
                             android:text="Date"/>
                     </LinearLayout>
 
                 </LinearLayout>
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="97dp"
                     android:layout_height="wrap_content"
-                    android:text="NoofDay"
+                    android:text="No of Day"
                     android:layout_gravity="center"
-                    android:paddingTop="@dimen/activity_horizontal_margin"/>
+                    android:paddingTop="@dimen/activity_horizontal_margin"
+                    android:textSize="18sp"
+                    android:layout_weight="0.08" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="DESCRIPTION VIEW "
-                    android:inputType="textMultiLine"/>
+                    android:inputType="textMultiLine"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DESCRIPTION VIEW "
+                    android:textSize="18sp"
+                    android:inputType="textMultiLine"
+                    android:padding="12dp"
+                    />
+
+
+
             </LinearLayout>
 
 
@@ -114,12 +179,7 @@
             android:layout_height="wrap_content"
             android:paddingRight="@dimen/activity_vertical_margin"
             android:paddingLeft="@dimen/activity_vertical_margin">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/activity_horizontal_margin"
-                android:paddingBottom="@dimen/activity_horizontal_margin"
-                android:text="description"/>
+
         </LinearLayout>
 
 

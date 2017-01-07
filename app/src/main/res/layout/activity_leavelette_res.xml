@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#50d284"
+        android:id="@+id/toolbar_leaveletter_res"
+        android:theme="@style/ToolbarColoredBackArrow">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EARN LEAVE"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:textSize="18sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOMAIN"
+            android:textSize="18sp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.99"
+            android:layout_gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--<ImageView-->
+                <!--android:layout_width="36dp"-->
+                <!--android:layout_height="28dp"-->
+                <!--android:id="@+id/img_dateFrom"-->
+                <!--android:background="@android:drawable/ic_menu_my_calendar"/>-->
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:text="FROM"
+                    android:textSize="18sp"
+                    android:paddingBottom="12dp"
+                    />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_dateFrom"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="Date"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--<ImageView-->
+                <!--android:layout_width="36dp"-->
+                <!--android:id="@+id/img_dateTo"-->
+                <!--android:layout_height="28dp"-->
+                <!--android:background="@android:drawable/ic_menu_my_calendar"/>-->
+                <TextView
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:text="To"
+                    android:textSize="18sp"
+                    android:paddingTop="12dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_dateTo"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:text="Date"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:text="No of Day"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:textSize="18sp"
+            android:layout_weight="0.08" />
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DESCRIPTION"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reason"
+            android:textSize="18sp"/>
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <View
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <LinearLayout
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="18sp"/>
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Destination"
+                 android:textSize="18sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descriptio"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Explain"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -48,6 +48,7 @@ public class TimeLineActivity extends Fragment {
         txt_earned.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(context, EarnedLeave.class);
                 startActivity(intent);
             }
@@ -60,10 +61,10 @@ public class TimeLineActivity extends Fragment {
             }
         });
 
-        TextView textout = (TextView) rootViewe.findViewById(R.id.txt_output);
+
         try {
-            new LeaveApi().execute();
-            textout.getText();
+//            new LeaveApi().execute();
+
         }catch (Exception e){
             e.printStackTrace();
         }

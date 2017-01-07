@@ -9,7 +9,7 @@
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FBC02D"
+        android:background="#ffd740"
         android:id="@+id/toolbar_sick"
         android:theme="@style/ToolbarColoredBackArrow">
 
@@ -81,6 +81,7 @@
                         android:layout_width="63dp"
                         android:layout_height="wrap_content"
                         android:text="FROM"
+                        android:textSize="20sp"
                         android:paddingBottom="12dp"
                         />
 
@@ -103,6 +104,7 @@
                         android:layout_width="65dp"
                         android:layout_height="wrap_content"
                         android:text="To"
+                        android:textSize="20sp"
                         android:paddingTop="12dp"/>
                     <EditText
                         android:layout_width="match_parent"
@@ -137,8 +139,9 @@
                 android:id="@+id/text_sick_des"
                 android:paddingBottom="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_horizontal_margin"
+                android:textSize="20sp"
                 android:hint="Description"
-                android:textSize="18sp"
+
                 android:inputType="textCapWords|textMultiLine"/>
 
         </LinearLayout>
@@ -162,8 +165,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|bottom"
                 android:text="SUBMIT"
-                android:textSize="18sp"
-                android:background="#FBC02D"
+                android:textSize="20sp"
+                android:background="#ffd740"
                 android:textColor="@color/white"
                 android:id="@+id/button_sick_sub"
                 android:gravity="center"

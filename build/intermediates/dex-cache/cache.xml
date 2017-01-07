@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-7.5.0_5890756fb5e902a0f826a4408201c9fd44debdc6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_4a36ae619766a8becee8907c4dbf647249dfede3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8e3a972f28b8bae817e382257ba177a31bcadbbc">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-7.5.0_07d354102ee8e94e50b767f59b4f1dddbec13e76/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_a6365891652bc06e1f6f967b5820ab61bf6185fc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8d736fefa22d896e84a268354b3ed48a42663150">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-7.5.0_cd6310ef0c49c3bcd616905810d9d9e5c5743b30/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_245c075ee0e005d239949f6c44c0fb0803abb844/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.2.1_afb10cc1013287e873377757bce1b590d2bfc566/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_ef256cfc63a9a061a7914fab05257e675559730c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f02127a85abd52a2cd526d4c2409f21969f80ee8">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-7.5.0_f8390dbc787b653ad44530e2bb050cad14e4eed7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.mixpanel.android/mixpanel-android/4.9.3/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="76ddce763ecf8a63007603028e881394390232bf">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.mixpanel.android-mixpanel-android-4.9.3_39e94592702b5fd2e527980171c946a0bde1a8a5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f44d03c138cb6488fdbaa65e3a7e5878861a56d8">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-7.5.0_99c6b40db6c4f951ece33da6af435343546a3d5b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="68c140702c7242d914655bcb3164d9e8c45b84cb">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appstate-7.5.0_5c94cb727bf7fceb7ee20fd197f7f3d868e981c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_c950f8b6ad0826ee9a7da5cef23fadb4f8753710/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_f09873f4f98e6f23f1e1f2c8a73d55503e07e23d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_e9fdc2a47810cfa05ee011e2bcd32ed7f26f41cc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_410ba6276b3e3ee6962876f07e5a41a538eeb234/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="781f34913b63fac58995dd635ec8579f366ae1d0">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_5f91bc76a54e8d39486bf0780ad677d020191ece/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_bd75194780c14d169e6c4a35287c629e6f3e6dc2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_9c18965536efa9265f355176e1d676e45aeb5444/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_8e9bbd7906076283d0861ae4114907bb05ed60d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-7.5.0_3c20242abb32f7c5aaf2af5075c981cd13916390/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1628f6fbf8a2ee3907b7704ee41c4927e5544dae">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_88c74f23b03972230159391c124ec78a718e5f8c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-7.5.0_4c660032553c5c0e16a00879ae729c86774a283a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="02bac2dc792d78241077861566f2c82da955e7fa">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-7.5.0_baa54e20d1c590f66d11fe58c10d29589962e684/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d405025c600055237c171a0bbabaa49d69696573">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-7.5.0_e2435b4c28c48c4e7c870f07d0653f0e85e4a899/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="69dd177337ead693c408c8dddc9546bb6f1244fa">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-7.5.0_0396ff41fcdcb44365a6d45c9197911ec1d4b957/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_d62408b075638a905813952c5dbde5f6fc41f91d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1e98ef3f124bb7a11f8575f9ff5dfea330b61b6f">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-7.5.0_4e57dbe32bfc070a4ee6683c193bde8cf7ecbf9e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_40019416070e81624443025a331c0a4b04cf1b35/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ba207be21987c11b37d9f8faa08ed6e722569f30">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-7.5.0_859706cf45afc55b78a8985ad721ae304fd9e7f3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6440e5e5cfe368f9bff3c537fb8988048069cb33">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-7.5.0_a1aa5eabf21fd32974640a96fa6f2b139b0635b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_25b034e908116cb552c9d137499753e4ed5e4a44/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="63ec6e9f4fe5482a7447d0f3091b8e543a02554c">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-7.5.0_06f564303ea165a0c6d3a9d03f584f02102d2682/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_c3ebeda447d0a4d4dc02ff63032c3a80f61ef685/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1a6411087ab88ce5542f593e63a2752b6b0d6f1a">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-7.5.0_b80fdc0608bbfa3d9ee86d1892601d82a51fb010/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a1372c17fccacca753d3951d3ad820571cbce075">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-22.0.0_27d01b9af7faeaa30eff15fbc9266162efdafb8c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-7.5.0_877a66edb2b634b076e0062e9cfbe26294fad5f1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6836d188602ec5382d1967c58b00960eb8ff8773">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-7.5.0_d20333277585e517cecead03efef480189980c98/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="272bc5d7063f24bc3a33ea1d318cde8f31f5ec4c">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-7.5.0_cab5b39ed693f5947b3b49d1c6ab6711b3d2349f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/de.hdodenhof-circleimageview-2.1.0_64cb3a3b1117849f368e73c231a3da22f463c56e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/22.0.0/jars/libs/internal_impl-22.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ba3df4eb0a630d7de294f0e48d3f9267d279b784">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.0.0_2cc95e9483b3e3df6fbb2a8e12ad820724161264/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.5.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a172852a35ff919e85b9b7f14bbc15c5bee25520">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-7.5.0_5a4623258bcf8375f9a98822bcf955ac467d7609/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_4ed4d811e5d40db3da3ac9600362960a77f9ea8b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/akila/attendanceAndroid/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/akila/attendanceAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_9c72a75b8b309ea974924998128b90b1646d4ee4/classes.dex" />
+    </item>
+
+</items>

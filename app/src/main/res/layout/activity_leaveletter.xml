@@ -9,8 +9,8 @@
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#00C853"
-        android:id="@+id/toolbar_notfication"
+        android:background="#50d284"
+        android:id="@+id/toolbar_leaveletter"
         android:theme="@style/ToolbarColoredBackArrow">
 
     </android.support.v7.widget.Toolbar>
@@ -26,6 +26,44 @@
             android:paddingBottom="@dimen/activity_horizontal_margin"
             android:paddingLeft="@dimen/activity_vertical_margin"
             android:paddingRight="@dimen/activity_vertical_margin">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EARN LEAVE"
+                    android:textColor="#00C853"
+                    android:padding="12dp"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NAME"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DOMAIN"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
 
 
 
@@ -33,7 +71,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:weightSum="1"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin">
 
                 <LinearLayout
                     android:layout_width="236dp"
@@ -55,6 +95,8 @@
                             android:layout_width="92dp"
                             android:layout_height="wrap_content"
                             android:text="FROM"
+                            android:textSize="18sp"
+
                             android:paddingBottom="12dp"
                             />
 
@@ -62,6 +104,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/txt_dateFrom"
+                            android:textSize="18sp"
                             android:text="Date"/>
                     </LinearLayout>
                     <LinearLayout
@@ -77,31 +120,43 @@
                             android:layout_width="92dp"
                             android:layout_height="wrap_content"
                             android:text="To"
+                            android:textSize="18sp"
                             android:paddingTop="12dp"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/txt_dateTo"
+                            android:textSize="18sp"
                             android:text="Date"/>
                     </LinearLayout>
 
                 </LinearLayout>
+
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="NoofDay"
+                    android:textSize="18sp"
                     android:layout_gravity="center"
                     android:paddingTop="@dimen/activity_horizontal_margin"/>
             </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+               />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_horizontal_margin">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="DESCRIPTION VIEW "
+                    android:textSize="18sp"
                     android:inputType="textMultiLine"/>
             </LinearLayout>
 
@@ -134,7 +189,7 @@
                     android:text="APPROVE"
                     android:textAlignment="center"
                     android:textSize="18sp"
-                    android:background="#00C853"
+                    android:background="#50d284"
                     android:textColor="@color/white"
                     android:id="@+id/button_accept"
                     android:gravity="center"

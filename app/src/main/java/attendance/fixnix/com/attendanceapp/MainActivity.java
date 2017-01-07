@@ -157,15 +157,15 @@ public class MainActivity extends AppCompatActivity
 //            notify.flags |= Notification.FLAG_AUTO_CANCEL;
 //            notif.notify(0, notify);
 //            notif.notify();
-            Intent intent = new Intent(MainActivity.this, NotificationActivity.class);
+            Intent intent = new Intent(MainActivity.this, CustomListActivity.class);
             startActivity(intent);
             return true;
         }
-        if (id == R.id.action_logout) {
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-            startActivity(intent);
-            return true;
-        }
+//        if (id == R.id.action_logout) {
+//            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+//            startActivity(intent);
+//            return true;
+//        }
 
 
         return super.onOptionsItemSelected(item);

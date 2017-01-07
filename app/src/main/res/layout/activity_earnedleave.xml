@@ -9,8 +9,8 @@
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#00C853"
-        android:id="@+id/toolbar_earn"
+        android:background="#50d284"
+        android:id="@+id/toolbar_earnLeave"
         android:theme="@style/ToolbarColoredBackArrow">
 
     </android.support.v7.widget.Toolbar>
@@ -32,6 +32,7 @@
             android:layout_height="wrap_content"
             android:text="LEAD"
              android:paddingTop="@dimen/activity_horizontal_margin"
+             android:fontFamily="montserrt"
              android:paddingBottom="@dimen/activity_horizontal_margin"
              android:textSize="18sp"/>
 
@@ -81,12 +82,15 @@
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:text="FROM"
+            android:textSize="20sp"
+
             android:paddingBottom="12dp"
             />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="date"
                 android:id="@+id/edt_earned_dateFrom"/>
         </LinearLayout>
         <LinearLayout
@@ -100,11 +104,12 @@
                 <!--android:layout_height="28dp"-->
                 <!--android:background="@android:drawable/ic_menu_my_calendar"/>-->
         <TextView
-            android:layout_width="60dp"
+            android:layout_width="56dp"
             android:layout_height="wrap_content"
             android:text="To"
+            android:textSize="20sp"
             android:paddingTop="12dp"
-            android:layout_weight="0.24" />
+            android:layout_weight="0.21" />
             <EditText
 
                 android:layout_width="170dp"
@@ -139,7 +144,6 @@
                 android:id="@+id/edt_earned_descrip"
                 android:paddingBottom="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_horizontal_margin"
-
                 android:hint="Description"
                 android:textSize="18sp"
                 android:inputType="textCapWords|textMultiLine"/>
@@ -165,8 +169,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|bottom"
                 android:text="SUBMIT"
-                android:textSize="18sp"
-                android:background="#00C853"
+                android:textSize="20sp"
+                android:background="#50d284"
                 android:textColor="@color/white"
                 android:id="@+id/button_sub"
                 android:gravity="center"

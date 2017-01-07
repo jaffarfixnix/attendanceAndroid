@@ -61,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
                     // out of range
 //                    Toast.makeText(this, getString(R.string.string_to), Toast.LENGTH_LONG).show();
                 } else {
-                    new MyAsyncTask().execute();
+//                    new MyAsyncTask().execute();
 
                     Toast.makeText(LoginActivity.this, "SucessFully Created", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);

@@ -23,6 +23,8 @@
         <activity android:name=".attendanceActivity.EarnedLeave"></activity>
         <activity android:name=".NotificationActivity"></activity>
         <activity android:name=".attendanceActivity.SickLeave"></activity>
+        <activity android:name="CustomListActivity"></activity>
+        <activity android:name=".DeclineActivity"></activity>
         <activity android:name="com.mixpanel.android.surveys.SurveyActivity" />
     </application>
 

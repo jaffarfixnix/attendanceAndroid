@@ -65,7 +65,7 @@ public class EarnedLeave extends AppCompatActivity implements View.OnClickListen
         context=this.getApplicationContext();
         String projectToken = "4cdf8949e9b0e47ba9676193b27cc706"; // e.g.: "1ef7e30d2a58d27f4b90c42e31d6d7ad"
         mixpanel = MixpanelAPI.getInstance(this, projectToken);
-        toolbar = (Toolbar) findViewById(R.id.toolbar_earn);
+        toolbar = (Toolbar) findViewById(R.id.toolbar_earnLeave);
         noDayEtxt= (TextView)findViewById(R.id.edt_earned_noDays);
         desEtxt = (EditText)findViewById(R.id.edt_earned_descrip);
         Button sub = (Button)findViewById(R.id.button_sub);

@@ -10,12 +10,12 @@
         android:icon="@drawable/icon_notifi"
         app:showAsAction="ifRoom"
         />
-    <item
-        android:title="Logout"
-        android:id="@+id/action_logout"
-        android:icon="@drawable/logout"
-        android:orderInCategory="100"
-        app:showAsAction="ifRoom"/>
+    <!--<item-->
+        <!--android:title="Logout"-->
+        <!--android:id="@+id/action_logout"-->
+        <!--android:icon="@drawable/logout"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="ifRoom"/>-->
 
 
 </menu>
